@@ -25,4 +25,10 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  preview: {
+    host: true, // Bind to 0.0.0.0 so it's accessible externally.
+    allowedHosts: [
+      'dokploytemplates-red-uits6i-456ed3-45-76-22-23.traefik.me'
+    ]
+  }
 })
